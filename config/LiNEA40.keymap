@@ -57,7 +57,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,
+            //スクロール方向を逆転,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -132,6 +132,7 @@
 
     macros {
         // マウスレイヤーを解除しながら、引数で渡されたキーを入力するマクロ
+
         to_layer_0: to_layer_0 {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
@@ -158,10 +159,10 @@
 
         MOUSE {
             bindings = <
-&trans  &trans  &trans    &trans    &trans                    &trans  &trans    &trans    &trans  &trans
-&trans  &trans  &mkp MB2  &mkp MB1  &trans                    &trans  &mkp MB1  &mkp MB2  &trans  &trans
-&trans  &trans  &trans    &trans    &trans                    &trans  &trans    &trans    &trans  &trans
-&trans  &trans  &trans    &trans    &trans  &trans    &trans  &trans            &trans    &trans  &trans
+&to_layer_0 Q  &to_layer_0 W  &trans    &trans    &trans                    &to_layer_0 Y  &to_layer_0 U  &trans    &trans  &trans
+&trans         &trans         &mkp MB2  &mkp MB1  &trans                    &trans         &mkp MB1       &mkp MB2  &trans  &trans
+&trans         &trans         &trans    &trans    &trans                    &trans         &trans         &trans    &trans  &trans
+&trans         &trans         &trans    &trans    &trans  &trans    &trans  &trans                        &trans    &trans  &trans
             >;
         };
 
