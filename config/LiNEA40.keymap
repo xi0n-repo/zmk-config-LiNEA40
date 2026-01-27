@@ -130,6 +130,16 @@
         };
     };
 
+    macros {
+        // マウスレイヤーを解除しながら、引数で渡されたキーを入力するマクロ
+        to_layer_0: to_layer_0 {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            bindings = <&tog 1 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
+            label = "TO_layer_0";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
