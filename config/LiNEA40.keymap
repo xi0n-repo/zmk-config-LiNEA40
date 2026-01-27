@@ -57,7 +57,7 @@
         layers = <SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-            //スクロール方向を逆転,,
+            //スクロール方向を逆転,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -147,7 +147,7 @@
         default_layer {
             bindings = <
 &kp Q                   &kp W                     &kp E             &kp R    &kp T                                      &kp Y        &kp U  &kp I                &kp O                      &kp P
-&baseAndS LEFT_SHIFT A  &baseAndS S LEFT_CONTROL  &kp D             &kp F    &kp G                                      &kp H        &kp J  &kp K                &baseAndS RIGHT_CONTROL L  &baseAndS RIGHT_SHIFT MINUS
+&baseAndS LEFT_SHIFT A  &baseAndS LEFT_CONTROL S  &kp D             &kp F    &kp G                                      &kp H        &kp J  &kp K                &baseAndS RIGHT_CONTROL L  &baseAndS RIGHT_SHIFT MINUS
 &kp Z                   &kp X                     &kp C             &kp V    &kp B                                      &kp N        &kp M  &kp COMMA            &kp DOT                    &kp SLASH
 &kp LEFT_GUI            &kp LEFT_ALT              &kp LEFT_CONTROL  &kp INS  &lt 5 SPACE  &lt 2 TAB    &lt 2 BACKSPACE  &lt 4 ENTER         &lt 6 RIGHT_BRACKET  &kp BACKSLASH              &mt RIGHT_SHIFT SLASH
             >;
@@ -159,10 +159,10 @@
 
         MOUSE {
             bindings = <
-&to_layer_0 Q              &to_layer_0 W              &to_layer_0 E              &to_layer_0 R              &to_layer_0 T                    &to_layer_0 Y              &to_layer_0 U              &to_layer_0 I              &to_layer_0 O              &to_layer_0 P
-&baseAndS LEFT_SHIFT A     &baseAndS S LEFT_CONTROL   &mkp MB2                   &mkp MB1                   &to_layer_0 G                    &to_layer_0 H              &mkp MB1                   &mkp MB2                   &baseAndS RIGHT_CONTROL L  &baseAndS RIGHT_SHIFT MINUS
-&to_layer_0 Z              &to_layer_0 X              &to_layer_0 C              &to_layer_0 V              &to_layer_0 B                    &to_layer_0 N              &to_layer_0 M              &to_layer_0 COMMA          &to_layer_0 DOT            &to_layer_0 SLASH
-&trans                     &trans                     &trans                     &trans                     &trans         &trans    &trans  &trans                                                &trans                     &trans                     &trans
+&to_layer_0 Q           &to_layer_0 W             &to_layer_0 E  &to_layer_0 R  &to_layer_0 T                    &to_layer_0 Y  &to_layer_0 U  &to_layer_0 I      &to_layer_0 O              &to_layer_0 P
+&baseAndS LEFT_SHIFT A  &baseAndS LEFT_CONTROL S  &mkp MB2       &mkp MB1       &to_layer_0 G                    &to_layer_0 H  &mkp MB1       &mkp MB2           &baseAndS RIGHT_CONTROL L  &baseAndS RIGHT_SHIFT MINUS
+&to_layer_0 Z           &to_layer_0 X             &to_layer_0 C  &to_layer_0 V  &to_layer_0 B                    &to_layer_0 N  &to_layer_0 M  &to_layer_0 COMMA  &to_layer_0 DOT            &to_layer_0 SLASH
+&trans                  &trans                    &trans         &trans         &trans         &trans    &trans  &trans                        &trans             &trans                     &trans
             >;
         };
 
