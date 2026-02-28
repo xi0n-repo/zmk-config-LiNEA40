@@ -11,9 +11,10 @@
 #define MOUSE 1
 #define CURSOR 2
 #define FUNCTION 3
-#define SCROLL 4
+#define NUMBER 4
 #define MARK 5
 #define WIRELESS 6
+#define SCROLL 7
 
 //mouse cursol
 
@@ -54,7 +55,7 @@
 
 &trackball_listener {
     scroller {
-        layers = <CURSOR>;
+        layers = <CURSOR SCROLL>;
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
             <&zip_xy_scaler 1 2>,
