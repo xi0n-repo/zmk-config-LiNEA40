@@ -62,7 +62,7 @@
 };
 
 &trackball_listener {
-    ｌprecision_mode {
+    precision_mode {
         layers = <4>; // NUMBERレイヤー（レイヤー4）を指定
         input-processors = <&zip_xy_scaler_precision 1 5>; // 速度を1/5に減速
     };
