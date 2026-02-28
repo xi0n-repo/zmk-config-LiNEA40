@@ -59,7 +59,7 @@
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
             <&zip_xy_scaler 1 2>,
-            //スクロール方向を逆転,,,,,,,,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -119,10 +119,10 @@
 
         default_layer {
             bindings = <
-&kp Q                   &kp W                     &kp E                &kp R    &kp T                                      &kp Y        &kp U  &kp I         &kp O                      &kp P
-&baseAndS LEFT_SHIFT A  &baseAndS LEFT_CONTROL S  &kp D                &kp F    &kp G                                      &kp H        &kp J  &kp K         &baseAndS RIGHT_CONTROL L  &baseAndS RIGHT_SHIFT MINUS
-&kp Z                   &kp X                     &kp C                &kp V    &kp B                                      &kp N        &kp M  &kp COMMA     &kp DOT                    &kp SLASH
-&kp LEFT_GUI            &kp LEFT_CONTROL          &mt LEFT_ALT ESCAPE  &kp INS  &lt 4 SPACE  &lt 2 TAB    &lt 5 BACKSPACE  &lt 3 ENTER         &lt 6 ESCAPE  &kp BACKSLASH              &mt RIGHT_SHIFT BACKSLASH
+&kp Q                   &kp W                     &kp E                      &kp R    &kp T                                      &kp Y        &kp U  &kp I         &kp O                      &lt 7 P
+&baseAndS LEFT_SHIFT A  &baseAndS LEFT_CONTROL S  &kp D                      &kp F    &kp G                                      &kp H        &kp J  &kp K         &baseAndS RIGHT_CONTROL L  &baseAndS RIGHT_SHIFT MINUS
+&kp Z                   &kp X                     &kp C                      &kp V    &kp B                                      &kp N        &kp M  &kp COMMA     &kp DOT                    &kp SLASH
+&kp LEFT_GUI            &kp LEFT_CONTROL          &baseAndS LEFT_ALT ESCAPE  &kp INS  &lt 4 SPACE  &lt 2 TAB    &lt 5 BACKSPACE  &lt 3 ENTER         &lt 6 ESCAPE  &kp BACKSLASH              &baseAndS RIGHT_SHIFT BACKSLASH
             >;
 
             sensor-bindings = <&mouse_scrl SCRL_DOWN SCRL_UP>;
@@ -170,10 +170,10 @@
 
         MARK {
             bindings = <
-&kp EXCLAMATION       &kp AT            &kp HASH   &kp DOLLAR  &kp PERCENT                    &kp CARET  &kp AMPERSAND     &kp ASTERISK       &kp LEFT_PARENTHESIS         &kp RIGHT_PARENTHESIS
-&mt LEFT_SHIFT GRAVE  &kp LEFT_CONTROL  &kp MINUS  &kp EQUAL   &none                          &none      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &mt RIGHT_CONTROL SEMICOLON  &mt RIGHT_SHIFT SINGLE_QUOTE
-&none                 &none             &none      &none       &none                          &none      &none             &none              &none                        &kp BACKSLASH
-&trans                &trans            &trans     &trans      &trans       &trans    &trans  &trans                       &trans             &trans                       &trans
+&kp EXCLAMATION             &kp AT            &kp HASH   &kp DOLLAR  &kp PERCENT                    &kp CARET  &kp AMPERSAND     &kp ASTERISK       &kp LEFT_PARENTHESIS               &kp RIGHT_PARENTHESIS
+&baseAndS LEFT_SHIFT GRAVE  &kp LEFT_CONTROL  &kp MINUS  &kp EQUAL   &none                          &none      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &baseAndS RIGHT_CONTROL SEMICOLON  &baseAndS RIGHT_SHIFT SINGLE_QUOTE
+&none                       &none             &none      &none       &none                          &none      &none             &none              &none                              &kp BACKSLASH
+&trans                      &trans            &trans     &trans      &trans       &trans    &trans  &trans                       &trans             &trans                             &trans
             >;
 
             sensor-bindings = <&re_kp C_VOLUME_DOWN C_VOLUME_UP>;
@@ -192,10 +192,10 @@
 
         SCROLL {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans          &trans  &trans  &trans
+&kp LC(LG(D))   &kp LC(LG(LEFT_ARROW))                     &kp LG(UP_ARROW)    &kp LC(LG(RIGHT_ARROW))  &trans                            &trans  &trans          &kp UP_ARROW    &trans           &trans
+&kp LEFT_SHIFT  &baseAndS LEFT_CONTROL LC(LG(LEFT_ARROW))  &kp LG(DOWN_ARROW)  &kp LG(RIGHT_ARROW)      &trans                            &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
+&trans          &trans                                     &trans              &trans                   &kp LC(LG(F4))                    &trans  &trans          &trans          &trans           &trans
+&trans          &trans                                     &trans              &trans                   &trans          &trans    &trans  &trans                  &trans          &trans           &trans
             >;
         };
     };
