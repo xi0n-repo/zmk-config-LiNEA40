@@ -58,7 +58,7 @@
         input-processors =
             <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
             <&zip_xy_scaler 1 2>,
-            //スクロール方向を逆転,,,,,,,,,,,,,,
+            //スクロール方向を逆転,,,,,,,,,,,,,,,
             <&zip_xy_to_scroll_mapper>;
     };
 };
@@ -156,7 +156,7 @@
             sensor-bindings = <&mouse_scrl SCRL_DOWN SCRL_UP>;
         };
 
-        SCROLL {
+        NUMBER {
             bindings = <
 &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3     &kp NUMBER_4  &kp NUMBER_5                    &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
 &kp KP_PLUS   &kp KP_MINUS  &kp KP_ASTERISK  &kp KP_SLASH  &kp KP_EQUAL                    &none         &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &none
