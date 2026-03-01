@@ -49,6 +49,7 @@
             #input-processor-cells = <2>;
             type = <INPUT_EV_REL>;
             codes = <INPUT_REL_X>, <INPUT_REL_Y>;
+
             track-remainders;
         };
     };
@@ -62,7 +63,6 @@
 };
 
 &trackball_listener {
-
     precision_mode {
         layers = <NUMBER>;
         input-processors = <&zip_xy_scaler_precision 1 3>; // 速度を1/Xに減速
@@ -155,10 +155,10 @@
 
         MOUSE {
             bindings = <
-&to_layer_0 Q           &to_layer_0 W             &to_layer_0 E       &to_layer_0 R  &to_layer_0 T                    &to_layer_0 Y  &to_layer_0 U  &to_layer_0 I      &to_layer_0 O              &to_layer_0 P
-&baseAndS LEFT_SHIFT A  &baseAndS LEFT_CONTROL S  &mkp MB2            &mkp MB1       &to_layer_0 G                    &to_layer_0 H  &mkp MB1       &mkp MB2           &baseAndS RIGHT_CONTROL L  &baseAndS RIGHT_SHIFT MINUS
-&to_layer_0 Z           &lt 3 X                   &to_layer_0 C       &to_layer_0 V  &to_layer_0 B                    &to_layer_0 N  &to_layer_0 M  &to_layer_0 COMMA  &lt 3 PERIOD               &lt 7 SLASH
-&to_layer_0 LEFT_GUI    &trans                    &to_layer_0 ESCAPE  &trans         &trans         &trans    &trans  &trans                        &trans             &trans                     &trans
+&to_layer_0 Q           &to_layer_0 W             &to_layer_0 E              &to_layer_0 R  &to_layer_0 T                    &to_layer_0 Y  &to_layer_0 U  &to_layer_0 I      &to_layer_0 O              &to_layer_0 P
+&baseAndS LEFT_SHIFT A  &baseAndS LEFT_CONTROL S  &mkp MB2                   &mkp MB1       &to_layer_0 G                    &to_layer_0 H  &mkp MB1       &mkp MB2           &baseAndS RIGHT_CONTROL L  &baseAndS RIGHT_SHIFT MINUS
+&to_layer_0 Z           &lt 3 X                   &to_layer_0 C              &to_layer_0 V  &to_layer_0 B                    &to_layer_0 N  &to_layer_0 M  &to_layer_0 COMMA  &lt 3 PERIOD               &lt 7 SLASH
+&to_layer_0 LEFT_GUI    &trans                    &baseAndS LEFT_ALT ESCAPE  &trans         &trans         &trans    &trans  &trans                        &trans             &trans                     &trans
             >;
         };
 
