@@ -62,9 +62,6 @@
 };
 
 &trackball_listener {
-    input-processors =
-        <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
-        <&zip_temp_layer MOUSE 600>;
 
     precision_mode {
         layers = <NUMBER>;
