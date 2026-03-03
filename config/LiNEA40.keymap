@@ -195,10 +195,10 @@
 
         MARK {
             bindings = <
-&kp EXCLAMATION             &kp AT            &kp HASH   &kp DOLLAR  &kp PERCENT                    &kp CARET  &kp AMPERSAND     &kp ASTERISK       &kp LEFT_PARENTHESIS               &kp RIGHT_PARENTHESIS
-&baseAndS LEFT_SHIFT GRAVE  &kp LEFT_CONTROL  &kp MINUS  &kp EQUAL   &none                          &none      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &baseAndS RIGHT_CONTROL SEMICOLON  &baseAndS RIGHT_SHIFT SINGLE_QUOTE
-&none                       &none             &none      &none       &none                          &none      &none             &none              &none                              &kp BACKSLASH
-&trans                      &trans            &trans     &trans      &kp SPACE    &trans    &trans  &trans                       &trans             &trans                             &trans
+&kp EXCLAMATION  &kp AT            &kp HASH   &kp DOLLAR  &kp PERCENT                    &kp CARET  &kp AMPERSAND     &kp ASTERISK       &kp LEFT_PARENTHESIS               &kp RIGHT_PARENTHESIS
+&kp LEFT_SHIFT   &kp LEFT_CONTROL  &kp MINUS  &kp EQUAL   &kp GRAVE                      &none      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &baseAndS RIGHT_CONTROL SEMICOLON  &baseAndS RIGHT_SHIFT SINGLE_QUOTE
+&none            &none             &none      &none       &none                          &none      &none             &none              &none                              &kp BACKSLASH
+&trans           &trans            &trans     &trans      &kp SPACE    &trans    &trans  &trans                       &trans             &trans                             &trans
             >;
 
             sensor-bindings = <&re_kp C_VOLUME_DOWN C_VOLUME_UP>;
