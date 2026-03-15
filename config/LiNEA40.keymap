@@ -144,10 +144,10 @@
 
         default_layer {
             bindings = <
-&kp Q                   &kp W                     &kp E                      &kp R    &kp T                                      &kp Y        &kp U  &kp I                       &kp O                      &kp P
-&baseAndS LEFT_SHIFT A  &baseAndS LEFT_CONTROL S  &kp D                      &kp F    &kp G                                      &kp H        &kp J  &kp K                       &baseAndS RIGHT_CONTROL L  &baseAndS RIGHT_SHIFT MINUS
-&kp Z                   &lt 3 X                   &kp C                      &kp V    &kp B                                      &kp N        &kp M  &kp COMMA                   &lt 3 PERIOD               &lt 7 SLASH
-&kp LEFT_GUI            &kp LEFT_CONTROL          &baseAndS LEFT_ALT ESCAPE  &kp INS  &lt 4 SPACE  &lt 2 TAB    &lt 5 BACKSPACE  &lt 3 ENTER         &baseAndS RIGHT_ALT ESCAPE  &kp RIGHT_GUI              &baseAndS RIGHT_SHIFT BACKSLASH
+&kp Q                     &kp W             &kp E                      &kp R    &kp T                                      &kp Y        &kp U  &kp I                       &kp O          &lt 7 P
+&baseAndS LEFT_CONTROL A  &kp S             &kp D                      &kp F    &kp G                                      &kp H        &kp J  &kp K                       &kp L          &baseAndS RIGHT_CONTROL MINUS
+&baseAndS LEFT_SHIFT Z    &lt 3 X           &kp C                      &kp V    &kp B                                      &kp N        &kp M  &kp COMMA                   &lt 3 PERIOD   &baseAndS RIGHT_SHIFT SLASH
+&kp LEFT_GUI              &kp LEFT_CONTROL  &baseAndS LEFT_ALT ESCAPE  &kp INS  &lt 4 SPACE  &lt 2 TAB    &lt 5 BACKSPACE  &lt 3 ENTER         &baseAndS RIGHT_ALT ESCAPE  &kp RIGHT_GUI  &baseAndS RIGHT_SHIFT BACKSLASH
             >;
 
             sensor-bindings = <&mouse_scrl SCRL_DOWN SCRL_UP>;
@@ -155,28 +155,28 @@
 
         MOUSE {
             bindings = <
-&to_layer_0 Q           &to_layer_0 W             &to_layer_0 E              &to_layer_0 R  &to_layer_0 T                    &to_layer_0 Y  &to_layer_0 U  &to_layer_0 I      &to_layer_0 O              &to_layer_0 P
-&baseAndS LEFT_SHIFT A  &baseAndS LEFT_CONTROL S  &mkp MB2                   &mkp MB1       &to_layer_0 G                    &to_layer_0 H  &mkp MB1       &mkp MB2           &baseAndS RIGHT_CONTROL L  &baseAndS RIGHT_SHIFT MINUS
-&to_layer_0 Z           &lt 3 X                   &to_layer_0 C              &to_layer_0 V  &to_layer_0 B                    &to_layer_0 N  &to_layer_0 M  &to_layer_0 COMMA  &lt 3 PERIOD               &lt 7 SLASH
-&to_layer_0 LEFT_GUI    &trans                    &baseAndS LEFT_ALT ESCAPE  &trans         &trans         &trans    &trans  &trans                        &trans             &trans                     &trans
+&to_layer_0 Q             &to_layer_0 W  &to_layer_0 E              &to_layer_0 R  &to_layer_0 T                    &to_layer_0 Y  &to_layer_0 U  &to_layer_0 I      &to_layer_0 O  &lt 7 P
+&baseAndS LEFT_CONTROL A  &to_layer_0 S  &mkp MB2                   &mkp MB1       &to_layer_0 G                    &to_layer_0 H  &mkp MB1       &mkp MB2           &to_layer_0 L  &baseAndS RIGHT_CONTROL MINUS
+&baseAndS LEFT_SHIFT Z    &lt 3 X        &to_layer_0 C              &to_layer_0 V  &to_layer_0 B                    &to_layer_0 N  &to_layer_0 M  &to_layer_0 COMMA  &lt 3 PERIOD   &baseAndS RIGHT_SHIFT SLASH
+&to_layer_0 LEFT_GUI      &trans         &baseAndS LEFT_ALT ESCAPE  &trans         &trans         &trans    &trans  &trans                        &trans             &trans         &trans
             >;
         };
 
         CURSOR {
             bindings = <
-&kp ESCAPE      &none             &none     &none     &none                      &none          &none           &kp UP_ARROW    &none            &none
-&kp LEFT_SHIFT  &kp LEFT_CONTROL  &mkp MB2  &mkp MB1  &none                      &kp PAGE_UP    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none
-&none           &none             &none     &none     &none                      &kp PAGE_DOWN  &kp HOME        &kp END         &none            &none
-&trans          &trans            &trans    &trans    &trans  &trans    &kp DEL  &trans                         &trans          &trans           &trans
+&kp ESCAPE        &none   &none     &none     &none                      &none          &none           &kp UP_ARROW    &none            &none
+&kp LEFT_CONTROL  &none   &mkp MB2  &mkp MB1  &none                      &kp PAGE_UP    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none
+&kp LEFT_SHIFT    &none   &none     &none     &none                      &kp PAGE_DOWN  &kp HOME        &kp END         &none            &none
+&trans            &trans  &trans    &trans    &trans  &trans    &kp DEL  &trans                         &trans          &trans           &trans
             >;
         };
 
         FUNCTION {
             bindings = <
-&kp ESCAPE      &kp F2            &kp F3     &kp F4     &kp F5                    &kp F6   &kp F7     &kp F8     &kp F9             &kp F10
-&kp LEFT_SHIFT  &kp LEFT_CONTROL  &mkp RCLK  &mkp LCLK  &none                     &kp F12  &mkp LCLK  &mkp RCLK  &kp RIGHT_CONTROL  &kp RIGHT_SHIFT
-&none           &none             &none      &none      &none                     &none    &none      &none      &none              &none
-&trans          &trans            &trans     &trans     &trans  &trans    &trans  &trans              &trans     &trans             &trans
+&kp ESCAPE        &kp F2  &kp F3     &kp F4     &kp F5                    &kp F6   &kp F7     &kp F8     &kp F9  &kp F10
+&kp LEFT_CONTROL  &none   &mkp RCLK  &mkp LCLK  &none                     &kp F12  &mkp LCLK  &mkp RCLK  &none   &kp RIGHT_CONTROL
+&kp LEFT_SHIFT    &none   &none      &none      &none                     &none    &none      &none      &none   &kp RIGHT_SHIFT
+&trans            &trans  &trans     &trans     &trans  &trans    &trans  &trans              &trans     &trans  &trans
             >;
 
             sensor-bindings = <&mouse_scrl SCRL_DOWN SCRL_UP>;
@@ -184,10 +184,10 @@
 
         NUMBER {
             bindings = <
-&kp NUMBER_1                  &kp NUMBER_2                     &kp NUMBER_3     &kp NUMBER_4  &kp NUMBER_5                           &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9                      &kp NUMBER_0
-&baseAndS LEFT_SHIFT KP_PLUS  &baseAndS LEFT_CONTROL KP_MINUS  &kp KP_ASTERISK  &kp KP_SLASH  &kp EQUAL                              &none         &kp NUMBER_4  &kp NUMBER_5  &baseAndS RIGHT_CONTROL NUMBER_6  &kp RIGHT_SHIFT
-&none                         &none                            &none            &none         &none                                  &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3                      &kp DOT
-&trans                        &trans                           &trans           &trans        &trans        &trans    &kp BACKSPACE  &kp ENTER                   &trans        &trans                            &trans
+&kp NUMBER_1                    &kp NUMBER_2  &kp NUMBER_3     &kp NUMBER_4  &kp NUMBER_5                           &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0
+&baseAndS LEFT_CONTROL KP_PLUS  &kp KP_MINUS  &kp KP_ASTERISK  &kp KP_SLASH  &kp EQUAL                              &none         &kp NUMBER_4  &kp NUMBER_5  &kp NUMBER_6  &kp RIGHT_CONTROL
+&kp LEFT_SHIFT                  &none         &none            &none         &none                                  &kp NUMBER_0  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &baseAndS RIGHT_SHIFT PERIOD
+&trans                          &trans        &trans           &trans        &trans        &trans    &kp BACKSPACE  &kp ENTER                   &trans        &trans        &trans
             >;
 
             sensor-bindings = <&inc_dec_kp DOWN_ARROW UP_ARROW>;
@@ -195,10 +195,10 @@
 
         MARK {
             bindings = <
-&kp EXCLAMATION  &kp AT            &kp HASH   &kp DOLLAR  &kp PERCENT                    &kp CARET  &kp AMPERSAND     &kp ASTERISK       &kp LEFT_PARENTHESIS               &kp RIGHT_PARENTHESIS
-&kp LEFT_SHIFT   &kp LEFT_CONTROL  &kp MINUS  &kp EQUAL   &kp GRAVE                      &none      &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &baseAndS RIGHT_CONTROL SEMICOLON  &baseAndS RIGHT_SHIFT SINGLE_QUOTE
-&none            &none             &none      &none       &none                          &none      &none             &none              &none                              &kp BACKSLASH
-&trans           &trans            &trans     &trans      &kp SPACE    &trans    &trans  &trans                       &trans             &trans                             &trans
+&kp EXCLAMATION   &kp AT  &kp HASH   &kp DOLLAR  &kp PERCENT                    &kp CARET      &kp AMPERSAND     &kp ASTERISK       &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&kp LEFT_CONTROL  &none   &kp MINUS  &kp EQUAL   &kp GRAVE                      &kp BACKSLASH  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp SEMICOLON         &baseAndS RIGHT_CONTROL SINGLE_QUOTE
+&kp LEFT_SHIFT    &none   &none      &none       &none                          &none          &none             &kp COMMA          &kp PERIOD            &baseAndS RIGHT_SHIFT SLASH
+&trans            &trans  &trans     &trans      &kp SPACE    &trans    &trans  &trans                           &trans             &trans                &trans
             >;
 
             sensor-bindings = <&re_kp C_VOLUME_DOWN C_VOLUME_UP>;
@@ -217,10 +217,10 @@
 
         SCROLL {
             bindings = <
-&kp LC(LG(D))   &kp LC(LG(LEFT_ARROW))                 &kp LG(UP_ARROW)    &kp LC(LG(RIGHT_ARROW))  &trans                                &trans         &trans          &kp UP_ARROW    &trans           &trans
-&kp LEFT_SHIFT  &baseAndS LEFT_CONTROL LG(LEFT_ARROW)  &kp LG(DOWN_ARROW)  &kp LG(RIGHT_ARROW)      &trans                                &kp PAGE_UP    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
-&trans          &trans                                 &trans              &trans                   &kp LC(LG(F4))                        &kp PAGE_DOWN  &kp HOME        &kp END         &trans           &trans
-&trans          &trans                                 &trans              &trans                   &trans          &trans    &kp DELETE  &trans                         &trans          &trans           &trans
+&kp LC(LG(D))     &kp LC(LG(LEFT_ARROW))  &kp LG(UP_ARROW)    &kp LC(LG(RIGHT_ARROW))  &trans                                &trans         &trans          &kp UP_ARROW    &trans           &trans
+&kp LEFT_CONTROL  &kp LG(LEFT_ARROW)      &kp LG(DOWN_ARROW)  &kp LG(RIGHT_ARROW)      &trans                                &kp PAGE_UP    &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
+&kp LEFT_SHIFT    &trans                  &trans              &trans                   &kp LC(LG(F4))                        &kp PAGE_DOWN  &kp HOME        &kp END         &trans           &trans
+&trans            &trans                  &trans              &trans                   &trans          &trans    &kp DELETE  &trans                         &trans          &trans           &trans
             >;
         };
     };
