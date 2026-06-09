@@ -81,8 +81,8 @@
     combos {
         compatible = "zmk,combos";
 
-        backspace {
-            bindings = <&kp BACKSPACE>;
+        lang1 {
+            bindings = <&kp LANG1>;
             key-positions = <9 8>;
             layers = <0>;
         };
@@ -97,6 +97,11 @@
             bindings = <&mkp RCLK>;
             key-positions = <17 18>;
             layers = <0 4>;
+        };
+
+        lang2 {
+            bindings = <&kp LANG2>;
+            key-positions = <1 0>;
         };
     };
 
@@ -173,10 +178,10 @@
 
         FUNCTION {
             bindings = <
-&kp ESCAPE        &kp F2  &kp F3     &kp F4     &kp F5                    &kp F6   &kp F7     &kp F8     &kp F9  &kp F10
-&kp LEFT_CONTROL  &none   &mkp RCLK  &mkp LCLK  &none                     &kp F12  &mkp LCLK  &mkp RCLK  &none   &kp RIGHT_CONTROL
-&kp LEFT_SHIFT    &none   &none      &none      &none                     &none    &none      &none      &none   &kp RIGHT_SHIFT
-&trans            &trans  &trans     &trans     &trans  &trans    &trans  &trans              &trans     &trans  &trans
+&kp ESCAPE        &kp F2  &kp F3        &kp F4     &kp F5                           &kp F6   &kp F7     &kp F8     &kp F9  &kp F10
+&kp LEFT_CONTROL  &none   &mkp RCLK     &mkp LCLK  &none                            &kp F12  &mkp LCLK  &mkp RCLK  &none   &kp RIGHT_CONTROL
+&kp LEFT_SHIFT    &none   &none         &none      &none                            &none    &none      &none      &none   &kp RIGHT_SHIFT
+&trans            &trans  &kp LEFT_ALT  &trans     &trans  &trans    &kp BACKSPACE  &trans              &trans     &trans  &trans
             >;
 
             sensor-bindings = <&mouse_scrl SCRL_DOWN SCRL_UP>;
